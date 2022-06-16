@@ -1,8 +1,11 @@
+import React from "react"
 import './App.css';
-
+import Signup from './pages/signup-page'
 function App() {
   return (
-    <h1>Hello World</h1>
+   <div>
+     <Signup />
+   </div>
   );
 }
 

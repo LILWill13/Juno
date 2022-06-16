@@ -8,7 +8,7 @@ module.exports = {
         const user = User.create({
             firstName: req.body.firstName,
             lastName: req.body.lastName,
-            birthday: req.body.birthdate,
+            birthday: req.body.birthday,
             username: req.body.username,
             email: req.body.email,
             password: req.body.password,
