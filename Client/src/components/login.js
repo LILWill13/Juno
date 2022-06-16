@@ -32,7 +32,7 @@ export default function Login() {
 
     return (
     <div className='Login'>
-        <form onSubmit={loginUser}>
+        <form onSubmit={loginUser} className='login-form'>
     
             <input
                 type="email"
