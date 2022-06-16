@@ -36,13 +36,12 @@ function Regiester() {
         const data = await res.json();
         console.log(data)
     
-        // if(data.status === 200) {
-        //   localStorage.setItem('token', data.token)
-        //   alert('User signed up successfully')
-        //   window.location.assign('/')
-        // } else {
-        //   alert('User not signed up successfully, please try again')
-        // }
+        if(data.status === 200) {
+          localStorage.setItem('token', data.token)
+          alert('User signed up successfully')
+        } else {
+          alert('User not signed up successfully, please try again')
+        }
       }
       };
 
