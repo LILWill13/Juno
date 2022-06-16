@@ -13,7 +13,6 @@ function Regiester() {
 
     async function createUser(event) {
         event.preventDefault()
-        console.log(firstName, lastName, birthday, username, email, password, confirmPassword)
         if(password !== confirmPassword) {
           alert('Passwords must match')
 
@@ -34,7 +33,6 @@ function Regiester() {
           })
         })
         const data = await res.json();
-        console.log(data)
     
         if(data.status === 200) {
           localStorage.setItem('token', data.token)

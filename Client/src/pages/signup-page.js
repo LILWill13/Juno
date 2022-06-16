@@ -3,7 +3,6 @@ import Regiester from '../components/regiester';
 
 
 export default function Signup() {
-
   return (
     <div>
         <Regiester />

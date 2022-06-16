@@ -22,8 +22,7 @@ module.exports = {
         return res.json({token, user, status: 200})
     },
 
-    async login(req, res) {
-        
+    async login(req, res) {      
         const user = await User.findOne({ email: req.body.email });
         
         if (!user) {
