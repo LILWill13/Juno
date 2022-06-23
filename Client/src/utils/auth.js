@@ -24,6 +24,11 @@ class AuthService {
     localStorage.removeItem('token');
     window.location.assign('/');
   }
+
+  getToken() {
+    // Retrieves the user token from localStorage
+    return localStorage.getItem('token');
+  }
 }
 
 export default new AuthService();
