@@ -37,6 +37,7 @@ function Regiester() {
         if(data.status === 200) {
           localStorage.setItem('token', data.token)
           alert('User signed up successfully')
+          window.location.assign('/')
         } else {
           alert('User not signed up successfully, please try again')
         }
