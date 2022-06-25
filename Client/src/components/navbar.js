@@ -9,7 +9,10 @@ export default function Navbar() {
         <div  className="NavbarContainer">
              <div className="navbarLinks">
                     { auth.loggedIn() ? (
-                    <button onClick={auth.logout} className="navbarLink">Logout</button> 
+                    <>
+                        <button onClick={auth.logout} className="navbarLink">Logout</button> 
+                        <Link to="/post"><button className="navbarLink">Post</button></Link>
+                    </>
                     ) : (
                     <>
                     <Link to="/login"><button className="navbarLink" >Login</button></Link>

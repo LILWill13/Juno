@@ -36,7 +36,7 @@ function Homepage() {
       
     return (
         <div>
-            <h1>Hello {userData.username}</h1>
+            <h1>Hello {userData.username || `Stranger, signup or login`}</h1>
         </div>
   )  
 };
